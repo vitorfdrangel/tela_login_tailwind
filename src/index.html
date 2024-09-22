@@ -10,7 +10,7 @@
     <main
       class="w-full min-h-screen flex flex-col md:flex-row justify-center items-center mx-auto"
     >
-      <section class="w-full flex-1 flex items-center p-4">
+      <section class="w-full flex-1 flex items-center justify-center p-4">
         <div
           class="w-full max-w-xl flex flex-col justify-center items-center gap-4"
         >
@@ -23,7 +23,7 @@
           <h1 class="text-4xl font-bold mb-7">Login</h1>
 
           <input
-            type="text"
+            type="email"
             placeholder="Digite o seu email..."
             class="w-full p-2 rounded-lg outline-none bg-gray-50 focus:bg-white"
           />
@@ -33,10 +33,45 @@
             placeholder="**********"
             class="w-full p-2 rounded-lg outline-none bg-gray-100 focus:bg-white duration-200"
           />
+
+          <div class="w-full flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <input type="checkbox" />
+              <label class="font-medium">Lembrar senha</label>
+            </div>
+
+            <a href="#" class="text-sky-600 hover:text-sky-500 duration-300"
+              >Esqueceu a senha?</a
+            >
+          </div>
+          <button
+            class="w-full p-2 rounded-lg bg-blue-700 text-center text-white text-lg font-medium hover:bg-blue-600 duration-300"
+          >
+            Acessar
+          </button>
+
+          <p class="text-sm font-medium">
+            Não possui uma conta?
+            <a href="#" class="text-sky-600 hover:text-sky-500 duration-300"
+              >Criar uma conta</a
+            >
+          </p>
         </div>
       </section>
 
-      <section class="hidden md:flex w-full flex-1"></section>
+      <section
+        class="hidden md:flex flex-col gap-9 items-center justify-center flex-1 w-full h-screen p-4 bg-blue-600"
+      >
+        <h1 class="max-w-lg text-2xl text-center text-white lg:text-3xl">
+          Domine as <strong>tecnologias mais buscadas</strong> pelo mercado!
+        </h1>
+
+        <img
+          src="./images/techs.png"
+          alt="Tecnologias usadas no mercado"
+          class="w-3/4 max-w-md lg:w-full"
+        />
+      </section>
     </main>
   </body>
 </html>
